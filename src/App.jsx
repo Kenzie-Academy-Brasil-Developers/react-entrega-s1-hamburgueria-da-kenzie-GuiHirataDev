@@ -17,6 +17,12 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
+  const showPrevProducts = () => {
+    fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
+    .then((res) => res.json())
+    .then((res) => setProducts(res))
+  }
+
   const showProducts = () => {
     const productsFiltered = products.filter((product) => product.name.toLowerCase().includes(filteredProducts))
     setProducts(productsFiltered)
@@ -27,6 +33,7 @@ function App() {
     const verification = currentSale.find((elem) => elem.id === productId);
     if (verification === undefined) {
       setCurrenteSale([...currentSale, productFound]);
+      showPrevProducts()
     }
   };
 
