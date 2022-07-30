@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    min-width: 365px;
+    min-height: 790px;
 }
 
 header {

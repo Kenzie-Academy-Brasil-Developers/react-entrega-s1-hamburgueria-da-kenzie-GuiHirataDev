@@ -12,7 +12,7 @@
 .card img {
     width: 260px;
     height: 160px;
-    background-color: var(--gray-0)
+    background-color: var(--gray-0);
 }
 
 .card h3 {

@@ -25,6 +25,8 @@
 
 .totalContainer {
     display: flex;
+    height: 150px;
+    border-radius: 0px 0px 15px 15px;
     flex-direction: column;
     background-color: var(--gray-0);
 }
@@ -46,6 +48,7 @@
     border-radius: 15px;
     font-size: 18px;
     color: var(--gray-3);
+    cursor: pointer;
 }
 
 .totalContainerNone {
